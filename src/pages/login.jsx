@@ -1,35 +1,119 @@
 import React from "react";
-import Bg3 from "../assets/images/bg3.jpg";
-
+import Signup6 from "../assets/images/signup6.jpg";
 
 export default function () {
   return (
-    <div>
-        <div className="bg-cover bg-center w-full h-screen filter blur" style={{ backgroundImage: `url(${Bg3})`}}></div> 
-       
-<form class="max-w-sm mx-auto bg-gray-900 absolute top-14 left-10 right-14">
-    <div className="text-white font-medium text-center">
-    <h2 className="text-lg my-3">LOGIN</h2>
-    </div>
-  <div class="mb-5 mx-7">
-    <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white">Email</label>
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="johndoe@gmail.com" required />
-  </div>
-  <div class="mb-5 mx-7">
-    <label for="password" class="block mb-2 text-sm font-medium text-white dark:text-white">Password</label>
-    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="**********"required />
-  </div>
-  <div class="mb-5 mx-7">
-    <label for="password" class="block mb-2 text-sm font-medium text-white dark:text-white">Confirm Password</label>
-    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="**********" required />
-  </div>
-  <div class="flex items-start mb-5 mx-7"></div>
-  <button type="submit" class="text-white bg-amber-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-6 py-2.5 mb-5 mx-7 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
-
-          
+    <>
+      <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
         
-    </div>
-
-  )
+        <div class="w-full max-w-sm bg-white border mx-36 border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <form class="space-y-6" action="#">
+          <h5 class="text-3xl font-medium text-gray-900 dark:text-white text-center">
+            SIGN UP
+          </h5>
+          <div>
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="name"
+              name="name"
+              id="name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              placeholder="johndoe"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="contact"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Contact
+            </label>
+            <input
+              type="contact"
+              name="contact"
+              id="contact"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              placeholder="123-456-789"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="location"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Location
+            </label>
+            <input
+              type="location"
+              name="location"
+              id="location"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              placeholder="accra"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Password
+            </label>
+             
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="••••••••"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              required
+            />
+          </div>
+          <div class="flex items-start">
+            <div class="flex items-start">
+              <div class="flex items-center h-5">
+                <input
+                  id="remember"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                  required
+                />
+              </div>
+              <label
+                for="remember"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Remember me
+              </label>
+            </div>
+            <a
+              href="#"
+              class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
+            >
+              Lost Password?
+            </a>
+          </div>
+          <button
+            type="submit"
+            class="w-full text-white bg-green-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Login to your account
+          </button>
+        </form>
+      </div>
+      <div
+          className="bg-cover bg-center bg-gradient-to-l md:bg-gradient-to-rw-full h-screen"
+          style={{ backgroundImage: `url(${Signup6})` }}
+        ></div>
+      </div>
+    </>
+  );
 }
