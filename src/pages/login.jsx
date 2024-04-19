@@ -1,118 +1,32 @@
 import React from "react";
-import Signup6 from "../assets/images/signup6.jpg";
+import Signup2 from "../assets/images/signup2.png";
 
-export default function () {
+export default function Login() {
   return (
     <>
       <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-        
-        <div class="w-full max-w-sm bg-white border mx-36 border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <form class="space-y-6" action="#">
-          <h5 class="text-3xl font-medium text-gray-900 dark:text-white text-center">
-            SIGN UP
-          </h5>
-          <div>
-            <label
-              for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Name
-            </label>
-            <input
-              type="name"
-              name="name"
-              id="name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-              placeholder="johndoe"
-              required
-            />
+        <div
+          className="bg-cover w-full bg-center bg-gradient-to-l md:bg-gradient-to-rw-full h-[600px]"
+          style={{ backgroundImage: `url(${Signup2})` }}
+        >
+          <div className="flex flex-col items-start ml-48">
+            <button className="text-green-900 text-xl font-bold py-12">
+              Name:
+            </button>
+            <button className="text-green-900 text-xl font-bold py-5">
+              Password:
+            </button>
+            <button className="text-green-900 text-xl font-bold py-5">
+              Contact:
+            </button>
+            <button className="text-green-900 text-xl font-bold py-6">
+              Location:
+            </button>
+            <button className="text-green-900 text-xl font-bold py-16">
+              SIGN UP
+            </button>
           </div>
-          <div>
-            <label
-              for="contact"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Contact
-            </label>
-            <input
-              type="contact"
-              name="contact"
-              id="contact"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-              placeholder="123-456-789"
-              required
-            />
-          </div>
-          <div>
-            <label
-              for="location"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Location
-            </label>
-            <input
-              type="location"
-              name="location"
-              id="location"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-              placeholder="accra"
-              required
-            />
-          </div>
-          <div>
-            <label
-              for="password"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Password
-            </label>
-             
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="••••••••"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-              required
-            />
-          </div>
-          <div class="flex items-start">
-            <div class="flex items-start">
-              <div class="flex items-center h-5">
-                <input
-                  id="remember"
-                  type="checkbox"
-                  value=""
-                  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                  required
-                />
-              </div>
-              <label
-                for="remember"
-                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Remember me
-              </label>
-            </div>
-            <a
-              href="#"
-              class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
-            >
-              Lost Password?
-            </a>
-          </div>
-          <button
-            type="submit"
-            class="w-full text-white bg-green-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Login to your account
-          </button>
-        </form>
-      </div>
-      <div
-          className="bg-cover bg-center bg-gradient-to-l md:bg-gradient-to-rw-full h-screen"
-          style={{ backgroundImage: `url(${Signup6})` }}
-        ></div>
+        </div>
       </div>
     </>
   );

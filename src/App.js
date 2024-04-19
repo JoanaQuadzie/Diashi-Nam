@@ -1,22 +1,22 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./pages/login.jsx";
+import SignUp from "./pages/signup.jsx";
+import React from "react";
+import Home from "./pages/homepage/homepage.jsx";
 
-import Hero from './components/hero';
-import Navbar from './components/navbar';
-// import Login from './pages/login';
-// import Signup from './pages/signup';
-// import Footer from "./components/footer";
-// import Contact from "./pages/contact";
+const router = createBrowserRouter([
+  { path: "/signup", element: <SignUp /> },
+  { path: "/login", element: <Login /> },
+  { path: "/", element: <Home /> },
+]);
+
 
 export default function App() {
   return (
     <>
-    < Navbar />
-    < Hero />
-    {/* < Login /> */}
-    {/* < Signup /> */}
-    {/* < Footer /> */}
-    {/* < Contact /> */}
+      <RouterProvider router={router} />
     </>
-  
+
   );
 }
 
