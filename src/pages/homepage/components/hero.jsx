@@ -1,5 +1,5 @@
 import React from "react";
-import Front6 from "../../../assets/images/front6.png";
+import Front4 from "../../../assets/images/front4.png";
 
 
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
    
-      <div className="bg-gray-100 top-16 absolute w-full py-20">
+      <div className="bg-gray-100 top-16 absolute w-full py-16">
         <div className="w-full flex justify-between px-36">
           <div className="space-y-9 pt-24">
             <h1 className="text-7xl font-bold text-green-600">Diashi-Nam</h1>
@@ -29,7 +29,7 @@ export default function Hero() {
             </div>
           </div>
           <div>
-            <img className="h-full w-[450px]" src={Front6} alt="" />
+            <img className="h-full w-[450px]" src={Front4} alt="" />
           </div>
         </div>
       </div>
