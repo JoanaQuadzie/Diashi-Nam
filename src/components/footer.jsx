@@ -3,212 +3,128 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-      <div class="bg-green-900">
-        <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-white sm:flex justify-between mx-auto">
-          <div class="p-5 sm:w-2/12 border-r">
-            <div class="text-sm uppercase text-yellow-400 font-bold">Menu</div>
-            <ul>
-              <li class="my-2">
-                <a class="text-yellow-400 hover:text-white" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="my-2">
-                <a class="text-yellow-400 hover:text-white" href="#">
-                  Services
-                </a>
-              </li>
-              <li class="my-2">
-                <a class="text-yellow-400 hover:text-white" href="#">
-                  Products
-                </a>
-              </li>
-              <li class="my-2">
-                <a class="text-yellow-400 hover:text-white" href="#">
-                  Pricing
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="p-5 sm:w-7/12 border-r text-center">
-            <h3 class="font-bold text-xl text-yellow-500 mb-4">Componentity</h3>
-            <p class="text-yellow-400 text-sm mb-10">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
-            </p>
-          </div>
-          <div class="p-5 sm:w-3/12">
-            <div class="text-yellow-500 text-sm uppercase hover:text-white font-bold">
-              Contact Us
+      <footer class="">
+        <div class="w-full flex-col px-10 pt-12 py-10 lg:flex lg:px-10 xl:px-24">
+          <div class="bg-black text-white cursor-default lg:flex lg:flex-row lg:gap-x-16">
+            <div>
+              <h2 class="text-2xl text-white font-mono font-bold">
+                Tech Solutions Co.
+              </h2>
+              <ul class="mt-4 text-sm flex flex-col items-start justify-start gap-2">
+                <li class="flex flex-row items-start">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 1024 1024"
+                      class="w-4 h-4 mr-1 mt-1 fill-zinc-600"
+                      preserveAspectRatio="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M517.802667 612.181333c96.298667-5.12 152.874667-91.946667 181.205333-168.704 45.226667-10.154667 45.226667-71.552 11.349333-97.109333 8.021333-79.744 34.816-194.090667-65.28-198.314667-27.093333-1.109333-43.093333-26.496-145.834666-18.474666-62.592 5.034667-125.056 15.104-163.712 49.450666-39.594667 35.2-37.248 103.296-27.093334 172.458667-34.048 20.48-22.741333 81.834667 22.570667 97.152 28.288 76.629333 90.538667 168.618667 186.794667 163.541333z m114.133333 17.834667c-31.232 58.154667-49.066667 126.848-80.298667 179.669333-4.437333-36.992-3.84-61.269333-4.437333-137.386666h-75.776c4.437333 95.146667 4.437333 95.146667-4.522667 137.386666-22.314667-58.112-44.544-126.805333-75.776-179.626666-133.717333 21.12-231.850667 84.522667-236.245333 264.192h713.386667c-0.085333-179.669333-102.656-243.072-236.373334-264.234667z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="font-inter text-white">Diashi_Nam</p>
+                </li>
+                <li class="flex flex-row items-start">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 1024 1024"
+                      class="w-4 h-4 mr-1 mt-1 fill-zinc-600"
+                      preserveAspectRatio="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M513.2 898.3c-106.4 0-206.6-9.2-282.3-26.1-88.9-19.9-137.4-47.5-132-83.3 3.7-25 19.5-37.2 58.5-51.6 32.6-12 96.8-27.2 148.5-35.6 12-2 21.4 5.4 23.4 17.3 2 12-6.4 21-18.3 23-44.4 7.2-105.8 20.8-132 31.2-29 11.5-26.2 14.8-26.2 17 0 1.8 0.6 8.9 20.4 18.2 19.2 9 47 17.4 80.4 24.5 71.7 15 165.6 23.3 264.7 23.3 99 0 193-8.3 264.7-23.3 33.5-7 61.3-15.5 80.4-24.5 19.9-9.2 16.2-16.2 17-17.8-1-2-3.7-5.9-32.7-17.3-26.2-10.4-82.4-23.7-126.7-30.9-12-2-20.3-10.3-18.4-22.3 2-12 12.4-20.3 24.4-18.4 51.7 8.3 109 24.3 142 35.5 39.3 13.3 54.8 26.6 58.6 51.8 5.4 35.8-43.2 63.5-132.2 83.2-75.6 16.9-175.8 26.1-282.2 26.1z"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M510.8 98.2c-134.1 0-239.5 108.4-239.3 242.4 0 4 0.1 8.2 0.3 12.3 1.4 28.6 10.2 57.2 21.4 83.4v0.1l17.9 34.5c1.5 2.9 148.7 277.2 165.1 303.1 9.2 14.5 24.6 20.7 35.5 20.7 10.6 0 27.6-5.7 35.3-20.7 12.3-24 175.8-303.1 175.8-303.1s15.2-26.2 18.7-34.6c13.4-31.7 18.9-49.2 20.3-83.7 0.1-3.6 0.2-9.4 0.2-12.3C761.9 206 644.9 98.2 510.8 98.2z m2.4 368.9c-74.2 0-134.3-60.1-134.3-134.3 0-74.2 60.1-134.3 134.3-134.3 74.2 0 134.3 60.1 134.3 134.3 0 74.2-60.1 134.3-134.3 134.3z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="font-inter text-white">
+                    Ambassadorial Enclave, 20 Aluguntugui St, Accra Gh
+                  </p>
+                </li>
+              </ul>
             </div>
-            <ul>
-              <li class="my-2">
-                <a class="text-yellow-500 hover:text-white" href="#">
-                  XXX XXXX, Floor 4 San Francisco, CA
-                </a>
-              </li>
-              <li class="my-2">
-                <a class="text-yellow-500 hover:text-white" href="#">
-                  contact@company.com
-                </a>
-              </li>
-            </ul>
+            <div class="mt-4 md:mt-0 lg:mt-0 flex flex-row flex-wrap lg:flex-nowrap lg:justify-center gap-4 lg:gap-x-24">
+              <div class="flex flex-col">
+                <h2 class="font-mono font-bold text-white text-lg">
+                  Contact
+                </h2>
+                <ul class="mt-4 grid gap-2 ">
+                  <li class="flex items-start text-sm">
+                    <span>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 1024 1024"
+                        class="w-4 h-4 mr-1 mt-1 fill-zinc-600"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M702.229 505.85l257.369 208.406V297.444zM599.854 588.749c-25.344 20.528-56.423 30.791-87.498 30.791-31.08 0-62.155-10.264-87.513-30.796l-53.778-43.556L65.846 792.386c2.945 22.208 13.831 41.923 29.75 56.193 7.592 6.805 16.341 12.319 25.868 16.329 10.846 4.566 22.712 7.164 35.207 7.164h711.225c15.817 0 30.632-4.139 43.612-11.24 9.122-4.99 17.365-11.399 24.295-19.056 12.221-13.502 20.449-30.628 22.931-49.554l-305.078-247.04-53.802 43.567zM64.969 297.272v417.157l257.529-208.577z"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M419.633 505.853l43.688 35.383c28.408 23.005 69.652 23.005 98.061 0l43.699-35.386 48.574-39.333 303.38-245.664c-9.591-40.379-45.87-70.543-89.139-70.543H156.671c-43.219 0-79.46 30.093-89.103 70.4l303.497 245.807 48.568 39.336z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <a
+                      target="javascript:;"
+                      class="text-left text-white break-words hover:underline hover:text-white"
+                      href="javascript:;"
+                    >
+                      joanaq03@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col">
+                <h2 class="font-mono font-bold text-white text-lg">
+                  Company
+                </h2>
+                <ul class="mt-4 grid gap-2 grid-cols-2">
+                  <li class="flex items-start text-sm">
+                    <span></span>
+                    <a
+                      target="javascript:;"
+                      class="text-left text-white break-words hover:underline hover:text-zinc-800"
+                      href="/services"
+                    >
+                      Diashi
+                    </a>
+                  </li>
+                  <li class="flex items-start text-sm">
+                    <span></span>
+                    <a
+                      target="javascript:;"
+                      class="text-left text-white break-words hover:underline hover:text-white"
+                      href=""
+                    >
+                      Nam
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          {/* <div class="w-full mt-10 py-10 border-t border-zinc-200 font-inter text-center text-xs text-zinc-400">Copyright ©
+      <!-- -->2024
+      <!-- --> Tech Solutions Co. All rights reserved.
+    </div> */}
         </div>
-        <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
-          {/* <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-            <a href="#" class="w-6 mx-1">
-              <svg
-                class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
-                width="100px"
-                height="100px"
-                viewBox="0 0 24 24"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
-              >
-                <path
-                  id="Twitter"
-                  d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
-                  -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
-                  0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
-                  -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
-                  0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
-                  -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
-                  0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
-                  -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
-                  -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
-                  1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
-                  -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
-                  6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
-                  0.771,-0.67 1.054,-1.093Z"
-                ></path>
-              </svg>
-            </a>
-            <a href="#" class="w-6 mx-1">
-              <svg
-                class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
-              >
-                <path
-                  id="Facebook"
-                  d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373
-                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
-                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
-                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"
-                ></path>
-              </svg>
-            </a>
-            <a href="#" class="w-6 mx-1">
-              <svg
-                class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
-              >
-                <g id="Layer_1">
-                  <circle id="Oval" cx="12" cy="12" r="12"></circle>
-                  <path
-                    id="Shape"
-                    d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
-                     -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
-                     -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
-                     -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
-                     -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
-                     0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
-                     2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
-                     1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
-                     0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
-                     -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
-                     -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
-                     -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
-                     0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
-                     0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z"
-                    style="fill: rgb(255, 255, 255);"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a href="#" class="w-6 mx-1">
-              <svg
-                class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
-              >
-                <path
-                  id="Shape"
-                  d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
-                  3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
-                  -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
-                  -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
-                  -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
-                  0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
-                  3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
-                  -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
-                  -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
-                  1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
-                  -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
-                  -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
-                  0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
-                  0.4,1.5l0,4.5l2.9,0Z"
-                ></path>
-              </svg>
-            </a>
-            <a href="#" class="w-6 mx-1">
-              <svg
-                class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
-              >
-                <path
-                  id="Combined-Shape"
-                  d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
-                  -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
-                  -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
-                  0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
-                  0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
-                  -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"
-                ></path>
-              </svg>
-            </a>
-          </div> */}
-          <div class="my-5">© Copyright 2023. All Rights Reserved.</div>
-        </div>
-      </div>
+      </footer>
     </>
   );
 }

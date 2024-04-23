@@ -15,10 +15,10 @@ export default function availableriders() {
       {/* <!-- source: https://github.com/mfg888/Responsive-Tailwind-CSS-Grid/blob/main/index.html --> */}
 
       <div class="text-center p-10">
-        <h1 class="font-bold text-4xl mb-4 text-green-600">
+        <h1 class="font-bold text-4xl mb-4 text-primary">
           Choose Your Preferred Rider
         </h1>
-        <h1 class="text-3xl text-green-600">We've got you!</h1>
+        <h1 class="text-3xl text-primary">We've got you!</h1>
       </div>
 
       {/* <!-- ✅ Grid Section - Starts Here 👇 --> */}

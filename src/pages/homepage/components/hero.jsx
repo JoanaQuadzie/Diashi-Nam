@@ -1,38 +1,58 @@
 import React from "react";
 import Front4 from "../../../assets/images/front4.png";
-
+import Front5 from "../../../assets/images/front5.png"
 
 import { Link } from "react-router-dom";
+import { FadeIn } from "react-slide-fade-in";
 
 export default function Hero() {
   return (
-   
-      <div className="bg-gray-100 top-16 absolute w-full py-16">
-        <div className="w-full flex justify-between px-36">
+    <div className="bg-gray-100 top-16 absolute w-full py-16">
+      <div className="w-full flex justify-between px-36">
+        <FadeIn
+          from="left"
+          positionOffset={400}
+          triggerOffset={200}
+          delayInMilliseconds={400}
+        >
           <div className="space-y-9 pt-24">
-            <h1 className="text-7xl font-bold text-green-600">Diashi-Nam</h1>
-            <h2 className="text-xl font-medium text-green-800 w-2/4">
+            <h1 className="text-7xl font-bold text-primary">Diashi-Nam</h1>
+            <h2 className="text-xl font-medium text-black w-2/4">
               I'm here to get you everything you need right at your doorstep in
               a minute
             </h2>
-            <div className="space-x-7">
-              <Link to="/signup">
-                <button className="bg-green-800 text-white py-2 px-5 rounded-full">
-                  Sign Up
-                </button>
-              </Link>
-              <Link to="/login">
-                <button className="bg-green-800 text-white py-2 px-5 rounded-full ">
-                  Login
-                </button>
-              </Link>
-            </div>
+            <FadeIn
+              from="bottom"
+              positionOffset={100}
+              triggerOffset={200}
+              delayInMilliseconds={800}
+            >
+              <div className="space-x-7">
+                <Link to="/signup">
+                  <button className="bg-primary text-white py-2 px-5 rounded-full">
+                    Sign Up
+                  </button>
+                </Link>
+                <Link to="/login">
+                  <button className="bg-primary text-white py-2 px-5 rounded-full ">
+                    Login
+                  </button>
+                </Link>
+              </div>
+            </FadeIn>
           </div>
-          <div>
+        </FadeIn>
+        <div>
+          <FadeIn
+            from="right"
+            positionOffset={400}
+            triggerOffset={200}
+            delayInMilliseconds={600}
+          >
             <img className="h-full w-[450px]" src={Front4} alt="" />
-          </div>
+          </FadeIn>
         </div>
       </div>
-    
+    </div>
   );
 }
