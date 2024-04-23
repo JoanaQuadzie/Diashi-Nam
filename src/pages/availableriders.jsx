@@ -1,9 +1,9 @@
 import React from 'react';
-import Rider1 from "../assets/images/rider1.jpg";
-import Rider2 from "../assets/images/rider2.jpg";
-import Rider4 from "../assets/images/rider4.jpg";
-import Rider5 from "../assets/images/rider5.jpg";
-import Rider6 from "../assets/images/rider6.jpg";
+import Rider1removebg from "../assets/images/rider1removebg.png";
+import Rider2removebg from "../assets/images/rider2removebg.png";
+import Rider4removebg from "../assets/images/rider4removebg.png";
+import Rider5removebg from "../assets/images/rider5removebg.png";
+import Rider6removebg from "../assets/images/rider6removebg.png";
 import Rider7 from "../assets/images/rider7.jpg";
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ export default function availableriders() {
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
             <img
-              src={Rider1}
+              src={Rider1removebg}
               alt="Product"
               class="h-80 w-72 object-cover rounded-t-xl"
             />
@@ -69,7 +69,7 @@ export default function availableriders() {
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
             <img
-              src={Rider2}
+              src={Rider2removebg}
               alt="Product"
               class="h-80 w-72 object-cover rounded-t-xl"
             />
@@ -108,7 +108,7 @@ export default function availableriders() {
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
             <img
-              src={Rider5}
+              src={Rider5removebg}
               alt="Product"
               class="h-80 w-72 object-cover rounded-t-xl"
             />
@@ -147,7 +147,7 @@ export default function availableriders() {
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
             <img
-              src={Rider4}
+              src={Rider4removebg}
               alt="Product"
               class="h-80 w-72 object-cover rounded-t-xl"
             />
@@ -186,7 +186,7 @@ export default function availableriders() {
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
             <img
-              src={Rider6}
+              src={Rider6removebg}
               alt="Product"
               class="h-80 w-72 object-cover rounded-t-xl"
             />

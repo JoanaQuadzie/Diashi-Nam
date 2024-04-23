@@ -1,15 +1,12 @@
 import React from "react";
 import Logoremove from "../assets/images/logoremove.png";
-import Bg1 from "../assets/images/bg1.png";
+
 
 
 
 export default function Login() {
   return (
     <div className="">
-      <div>
-        <img className="" src={Bg1} alt="Background" />
-      </div>
       <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 px-6">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
@@ -17,10 +14,10 @@ export default function Login() {
             src={Logoremove}
             alt="Workflow"
           />
-          <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
+          <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-primary">
             Welcome Back
           </h2>
-          <p className="mt-2 text-center text-sm leading-5 text-green-700 max-w">
+          <p className="mt-2 text-center text-sm leading-5 text-primary max-w">
             login to your account
           </p>
         </div>
@@ -94,7 +91,7 @@ export default function Login() {
                 <span className="block w-full rounded-md shadow-sm">
                   <button
                     type="submit"
-                    className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-900 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
                   >
                     Sign in
                   </button>

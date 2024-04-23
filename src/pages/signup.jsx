@@ -1,12 +1,10 @@
 import React from "react";
-import Bg1 from "../assets/images/bg1.png";
 import Logoremove from "../assets/images/logoremove.png";
 import { Link } from "react-router-dom";
 
 export default function SignUp() {
   return (
-    <div className="flex">
-      <img className="" src={Bg1} alt="Background" />
+    <div>
       <div className="min-h-screen flex flex-col align-left py-6 sm:px-6 lg:px-8 mr-12">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
@@ -14,14 +12,14 @@ export default function SignUp() {
             src={Logoremove}
             alt="Workflow"
           />
-          <h2 className="mt-6 text-center text-4xl leading-9 font-extrabold text-green-900">
+          <h2 className="mt-6 text-center text-4xl leading-9 font-extrabold text-primary">
             Create a new account
           </h2>
-          <p className="mt-2 text-center text-sm leading-5 text-gray-500 max-w">
+          <p className="mt-2 text-center text-sm leading-5 text-primary max-w">
             Or{" "}
             <a
               href="#"
-              className="font-medium text-green-900 hover:text-green-700 focus:outline-none focus:underline transition ease-in-out duration-150"
+              className="font-medium text-primary hover:text-green-700 focus:outline-none focus:underline transition ease-in-out duration-150"
             >
               <Link to="/login">login to your account</Link>
             </a>
@@ -139,7 +137,7 @@ export default function SignUp() {
                 <span className="block w-full rounded-md shadow-sm">
                   <button
                     type="submit"
-                    className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-900 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
                   >
                     Create account
                   </button>
