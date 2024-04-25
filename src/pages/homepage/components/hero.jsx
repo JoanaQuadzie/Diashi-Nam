@@ -1,7 +1,5 @@
 import React from "react";
 import Front4 from "../../../assets/images/front4.png";
-import Front5 from "../../../assets/images/front5.png"
-
 import { Link } from "react-router-dom";
 import { FadeIn } from "react-slide-fade-in";
 

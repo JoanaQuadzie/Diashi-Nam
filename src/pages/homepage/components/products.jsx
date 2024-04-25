@@ -7,9 +7,10 @@ import Freshfood from "../../../assets/images/freshfood.jpg";
 import Delivery from "../../../assets/images/delivery.png";
 import Store from "../../../assets/images/store.png";
 import Hero7 from "../../../assets/images/hero7.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+  const navigate = useNavigate()
   const categories = [
     {
       title: "Groceries",
@@ -52,45 +53,24 @@ const Products = () => {
         <div className="p-1 flex flex-wrap items-center justify-center">
           {categories.map((category, index) => (
             <div className="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg group">
-              <svg
-                className="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform"
-                viewBox="0 0 375 283"
-                fill="none"
-                style={{ opacity: "0.1" }}
-              >
-                <rect
-                  x="159.52"
-                  y="175"
-                  width="152"
-                  height="152"
-                  rx="8"
-                  transform="rotate(-45 159.52 175)"
-                  fill="white"
-                />
-                <rect
-                  y="107.48"
-                  width="152"
-                  height="152"
-                  rx="8"
-                  transform="rotate(-45 0 107.48)"
-                  fill="white"
-                />
-              </svg>
               <div className="relative pt-10 px-10 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <img className="w-40 h-40" src={category.img} alt="" />
               </div>
               <div className=" flex flex-col gap-y-4 px-6 pb-6 mt-6 text-lg font-semibold">
                 <span className="text-black ">Want {category.title}?</span>
-                <span className=" bg-primary text-white rounded-full justify-center text-xs font-bold px-2 py-3 leading-none flex items-center">
-                  <Link to="/availableriders">Shop Now</Link>
-                </span>
+                <button
+                  className=" bg-primary hover:bg-purple-800 text-white rounded-full justify-center text-xs font-bold px-2 py-3 leading-none flex items-center"
+                  onClick={() => navigate("/ReceiptForm")}
+                >
+                  Shop Now
+                </button>
               </div>
             </div>
           ))}
         </div>
 
         <div className="bg-gray-100">
-          <h2 className="font-bold text-center text-5xl text-primary py-2 my-20">
+          <h2 className="font-bold text-center text-5xl text-primary pt-8 my-20">
             Why Shop With Us
           </h2>
           <div className="grid grid-cols-2 px-40 items-center">
@@ -102,9 +82,7 @@ const Products = () => {
                   </div>
 
                   <div className="flex flex-col gap-2 py-3">
-                    <p className="text-xl font-bold text-primary">
-                      Fresh Food
-                    </p>
+                    <p className="text-xl font-bold text-primary">Fresh Food</p>
 
                     <p className="text-gray-500">
                       We try to keep our items safe and fresh. Our aim is to

@@ -9,8 +9,9 @@ import Riderdashboard from "./pages/riderdashboard.jsx";
 import Contact from "./pages/contact.jsx";
 import About from "./pages/about.jsx";
 import Services from "./pages/services.jsx";
-import Paywithcard from "./pages/paywithcard.jsx";
 import Payment from "./pages/payment.jsx";
+import ReceiptForm from "./pages/formlist.jsx";
+import Confirmation from "./pages/confirmation.jsx";
 
 
 
@@ -24,8 +25,9 @@ const router = createBrowserRouter([
   { path: "/contact", element: <Contact /> },
   { path: "/about", element: <About /> },
   { path: "/services", element: <Services /> },
-  { path: "/paywithcard", element: <Paywithcard /> },
   { path: "/payment", element: <Payment /> },
+  { path: "/receiptForm", element: <ReceiptForm /> },
+  { path: "/confirmation", element: <Confirmation /> },
 ]);
 
 
