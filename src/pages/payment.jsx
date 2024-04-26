@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -71,7 +71,6 @@ export default function Payment() {
                 <button
                   class="bg-primary hover:bg-purple-900 text-white w-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="button"
-                  onClick={() => navigate("/availableriders")}
                 >
                   Enter
                 </button>
@@ -147,13 +146,14 @@ export default function Payment() {
                   </div>
                 </div>
                 <div class="mt-8">
-                  <button
-                    type="submit"
-                    class="w-full bg-primary hover:bg-purple-900 text-white font-medium py-3 rounded-lg focus:outline-none"
-                    onClick={() => navigate("/availableriders")}
-                  >
-                    Submit
-                  </button>
+                  <Link to="/confirmation">
+                    <button
+                      type="submit"
+                      class="w-full bg-primary hover:bg-purple-900 text-white font-medium py-3 rounded-lg focus:outline-none"
+                    >
+                      Submit
+                    </button>
+                  </Link>
                 </div>
               </form>
             </div>

@@ -5,7 +5,7 @@ import { FadeIn } from "react-slide-fade-in";
 
 export default function Hero() {
   return (
-    <div className="bg-gray-100 top-16 absolute w-full py-16">
+    <div className="bg-gray-100 top-16 absolute w-full py-16 md:w-2/3 lg:w-full">
       <div className="w-full flex justify-between px-36">
         <FadeIn
           from="left"
