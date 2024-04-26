@@ -1,23 +1,19 @@
 import React from "react";
-import Logoremove from "../assets/images/logoremove.png";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-
-
-
+import Signup3 from "../assets/images/sign3.jpg";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
     <>
-    <Navbar/>
-      <div className="">
-        <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 px-6">
+      <Navbar bgColor={"bg-gray-400"} />
+      <div className="grid grid-cols-2">
+        <div className="flex justify-center items-center">
+          <img className="w-9/12 mt-12" src={Signup3} alt="" />
+        </div>
+        <div className="min-h-screen flex flex-col py-6 sm:pl-0 sm:pr-6 lg:pr-8 lg:pl-1 mr-40 mt-32">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <img
-              className="mx-auto h-10 w-auto"
-              src={Logoremove}
-              alt="Workflow"
-            />
             <h2 className="mt-4 text-center text-3xl leading-9 font-extrabold text-primary">
               Welcome Back
             </h2>
@@ -93,12 +89,14 @@ export default function Login() {
 
                 <div className="mt-6">
                   <span className="block w-full rounded-md shadow-sm">
-                    <button
-                      type="submit"
-                      className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-900 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
-                    >
-                      Sign in
-                    </button>
+                    <Link to="/categories">
+                      <button
+                        type="submit"
+                        className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-900 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
+                      >
+                        Sign in
+                      </button>
+                    </Link>
                   </span>
                 </div>
               </form>
@@ -106,35 +104,10 @@ export default function Login() {
           </div>
         </div>
         <div className="absolute top-80 left-80 text-primary">
-          <svg
-            width="45"
-            height="43"
-            viewBox="0 0 45 43"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M38.4822 41.8722C38.4822 41.8722 -3.08845 45.558 1.06709 24.3861C3.76607 10.6352 20.9941 16.3884 20.9941 16.3884C20.9941 16.3884 21.8094 -1.75829 35.6239 0.671643C54.8375 4.05124 38.4822 41.8722 38.4822 41.8722Z"
-              fill="currentColor"
-            />
-          </svg>
-          <div className="absolute top-40 left-36">
-            <svg
-              width="40"
-              height="58"
-              viewBox="0 0 45 43"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M38.4822 41.8722C38.4822 41.8722 -3.08845 45.558 1.06709 24.3861C3.76607 10.6352 20.9941 16.3884 20.9941 16.3884C20.9941 16.3884 21.8094 -1.75829 35.6239 0.671643C54.8375 4.05124 38.4822 41.8722 38.4822 41.8722Z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
+          <div className="absolute top-40 left-36"></div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

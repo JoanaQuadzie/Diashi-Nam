@@ -12,7 +12,7 @@ import Services from "./pages/services.jsx";
 import Payment from "./pages/payment.jsx";
 import ReceiptForm from "./pages/formlist.jsx";
 import Confirmation from "./pages/confirmation.jsx";
-
+import Categories from "./pages/categories";
 
 
 const router = createBrowserRouter([
@@ -28,6 +28,7 @@ const router = createBrowserRouter([
   { path: "/payment", element: <Payment /> },
   { path: "/receiptForm", element: <ReceiptForm /> },
   { path: "/confirmation", element: <Confirmation /> },
+  { path: "/categories", element: <Categories /> }
 ]);
 
 

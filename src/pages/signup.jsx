@@ -3,19 +3,18 @@ import Logoremove from "../assets/images/logoremove.png";
 import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Sign3 from "../assets/images/sign3.jpg";
 
 export default function SignUp() {
   return (
     <>
-    <Navbar/>
-      <div>
-        <div className="min-h-screen flex flex-col align-left py-6 sm:px-6 lg:px-8 mr-12">
+      <Navbar bgColor={"bg-gray-400"} />
+      <div className="grid grid-cols-2">
+        <div className="flex justify-center items-center">
+          <img className="w-9/12" src={Sign3} alt="signup image" />
+        </div>
+        <div className="min-h-screen flex flex-col py-6 sm:pl-0 sm:pr-6 lg:pr-8 lg:pl-1 mr-12 mt-20">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <img
-              className="mx-auto h-10 w-auto"
-              src={Logoremove}
-              alt="Workflow"
-            />
             <h2 className="mt-6 text-center text-4xl leading-9 font-extrabold text-primary">
               Create a new account
             </h2>
@@ -31,7 +30,7 @@ export default function SignUp() {
           </div>
 
           <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-            <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+            <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-5">
               <form method="POST" action="#">
                 <div>
                   <label
@@ -77,13 +76,13 @@ export default function SignUp() {
                     <input
                       id="password"
                       name="password"
-                      placeholder="********"
+                      placeholder="*************"
                       type="password"
                       required=""
                       value=""
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                     />
-                    <div className="hidden absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                    <div className="hidden absolute inset-y-0 right-0 pr-3 items-center pointer-events-none">
                       <svg
                         className="h-5 w-5 text-red-500"
                         fill="currentColor"
@@ -139,48 +138,22 @@ export default function SignUp() {
 
                 <div className="mt-6">
                   <span className="block w-full rounded-md shadow-sm">
-                    <button
-                      type="submit"
-                      className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-900 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
-                    >
-                      Create account
-                    </button>
+                    <Link to="/login">
+                      <button
+                        type="submit"
+                        className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-900 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-green-700 transition duration-150 ease-in-out"
+                      >
+                        Create account
+                      </button>
+                    </Link>
                   </span>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div className="absolute top-28 left-56 text-primary">
-          <svg
-            width="45"
-            height="43"
-            viewBox="0 0 45 43"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M38.4822 41.8722C38.4822 41.8722 -3.08845 45.558 1.06709 24.3861C3.76607 10.6352 20.9941 16.3884 20.9941 16.3884C20.9941 16.3884 21.8094 -1.75829 35.6239 0.671643C54.8375 4.05124 38.4822 41.8722 38.4822 41.8722Z"
-              fill="currentColor"
-            />
-          </svg>
-          <div className="absolute top-60 left-36">
-            <svg
-              width="40"
-              height="58"
-              viewBox="0 0 45 43"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M38.4822 41.8722C38.4822 41.8722 -3.08845 45.558 1.06709 24.3861C3.76607 10.6352 20.9941 16.3884 20.9941 16.3884C20.9941 16.3884 21.8094 -1.75829 35.6239 0.671643C54.8375 4.05124 38.4822 41.8722 38.4822 41.8722Z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-        </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

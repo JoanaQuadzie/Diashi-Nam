@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <>
-      <footer class="flex flex-col space-y-10 justify-center m-10 bg-gray-800 py-10 px-10">
+      <footer class="flex flex-col space-y-10 justify-center m-10 bg-primary py-10 px-10">
         <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
           <a class="hover:text-gray-300" href="#">
             Home
@@ -76,7 +76,7 @@ export default function Footer() {
           </a>
         </div>
         <p class="text-center text-white font-medium">
-          &copy; 2022 Company Ltd. All rights reservered.
+          &copy; 2024 Diashi-Nam Ltd. All rights reservered.
         </p>
       </footer>
     </>

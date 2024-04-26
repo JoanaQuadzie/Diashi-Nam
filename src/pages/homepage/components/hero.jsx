@@ -28,7 +28,7 @@ export default function Hero() {
               <div className="space-x-7">
                 <Link to="/signup">
                   <button className="bg-primary text-white py-2 px-5 rounded-full">
-                    Sign Up
+                    Register
                   </button>
                 </Link>
                 <Link to="/login">

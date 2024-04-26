@@ -6,11 +6,11 @@ import Footer from "../components/footer";
 export default function contact() {
   return (
     <>
-    <Navbar/>
+      <Navbar bgColor={"bg-gray-400"} />
       <div>
         <div className="bg-gray-50 dark:bg-gray-900" id="contact">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-            <h2 className="text-5xl font-bold text-primary dark:text-gray-100">
+            <h2 className="text-5xl mt-10 font-bold text-primary dark:text-gray-100">
               Contact
             </h2>
             <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-gray-400">
@@ -130,7 +130,7 @@ export default function contact() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

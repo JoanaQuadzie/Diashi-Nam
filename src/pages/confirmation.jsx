@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 export default function confirmation() {
   return (
     <>
-      <Navbar />
+      <Navbar bgColor={"bg-gray-400"} />
       <div className="flex flex-col items-center w-full">
         <h1 className="text-5xl text-center text-primary font-bold py-6 mt-28">
           Expect A Call From Your Rider Soon!

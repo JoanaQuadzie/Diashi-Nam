@@ -5,7 +5,7 @@ import Navbar from "../components/navbar";
 export default function services() {
   return (
     <>
-    <Navbar/>
+      <Navbar bgColor={"bg-gray-400"} />
       <div>
         <link
           rel="stylesheet"
@@ -15,7 +15,7 @@ export default function services() {
         <section id="new-features" class="py-8 bg-white sm:py-10 lg:py-16">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="text-center">
-              <h2 class="text-5xl font-bold leading-tight text-primary sm:text-4xl xl:text-5xl">
+              <h2 class="text-5xl mt-10 font-bold leading-tight text-primary sm:text-4xl xl:text-5xl">
                 Our Services
               </h2>
               <p class="mt-2 text-base leading-7 text-primary sm:mt-8">
@@ -113,7 +113,7 @@ export default function services() {
           </div>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

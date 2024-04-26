@@ -8,9 +8,9 @@ import Footer from "../components/footer";
 export default function about() {
   return (
     <>
-      <Navbar />
+      <Navbar bgColor={"bg-gray-400"} />
       <div className="flex flex-col px-16">
-        <h1 className="text-primary text-5xl font-bold text-center py-10 ">
+        <h1 className="text-primary text-5xl font-bold text-center py-10 mt-14">
           About Us
         </h1>
         <div className="flex items-center gap-x-5">

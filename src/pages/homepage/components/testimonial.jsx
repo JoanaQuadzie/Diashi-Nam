@@ -6,7 +6,7 @@ export default function testimonial() {
       <h1 className="text-primary text-5xl font-bold text-center py-12 ">
         Testimonials
       </h1>
-      <div className="flex flex-col-3 px-40 py-18 ">
+      <div className="flex flex-col-3 px-40 py-18 mb-16 gap-6">
         <div class="space-y-4 max-w-md mx-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"

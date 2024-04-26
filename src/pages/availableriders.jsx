@@ -1,10 +1,7 @@
 import React from 'react';
 import Rider1removebg from "../assets/images/rider1removebg.png";
 import Rider2removebg from "../assets/images/rider2removebg.png";
-import Rider4removebg from "../assets/images/rider4removebg.png";
-import Rider5removebg from "../assets/images/rider5removebg.png";
 import Rider6removebg from "../assets/images/rider6removebg.png";
-import Rider7removebg from "../assets/images/rider7removebg.png";
 import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -14,18 +11,18 @@ import Footer from '../components/footer';
 export default function availableriders() {
   return (
     <>
-      <Navbar />
+      <Navbar bgColor={"bg-gray-400"} />
       <div>
         <div class="text-center p-10">
-          <h1 class="font-bold text-5xl mb-4 text-primary">
+          <h1 class="font-bold text-5xl mt-20 text-primary">
             Choose Your Preferred Rider
           </h1>
           <h1 class="text-3xl text-primary">We've got you!</h1>
         </div>
 
-        {/* <!-- ✅ Grid Section - Starts Here 👇 --> */}
-        {/* <!-- https://gist.github.com/goodreds/3579ddfffe439457b5ef9902b5336124 --> */}
-        <section class="container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0">
+        
+      
+        <section class="container mb-28 mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0">
           <section class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start ">
             <section class="p-5 py-10 text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
               <img src={Rider1removebg} alt="" />
@@ -74,7 +71,7 @@ export default function availableriders() {
                 <h2 class="font-semibold mb-5 hover:underline">View Profile</h2>
               </Link>
               <Link to="/payment">
-                <button class="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600">
+                <button class="p-2 px-6 bg-primary text-white rounded-md hover:bg-purple-600">
                   Select
                 </button>
               </Link>
@@ -124,7 +121,7 @@ export default function availableriders() {
                 Delivery Locations: Spintex, Tema, Afienya, Teshie, Nungua,
               </p>
               <h2 class="font-semibold mb-5 hover:underline">View Profile</h2>
-              <button class="p-2 px-6 bg-green-500 text-white rounded-md hover:bg-green-600">
+              <button class="p-2 px-6 bg-primary text-white rounded-md hover:bg-green-600">
                 Select
               </button>
             </section>
@@ -174,7 +171,7 @@ export default function availableriders() {
                 Labadi
               </p>
               <h2 class="font-semibold mb-5 hover:underline">View Profile</h2>
-              <button class="p-2 px-6 bg-red-500 text-white rounded-md hover:bg-red-600">
+              <button class="p-2 px-6 bg-primary text-white rounded-md hover:bg-red-600">
                 Select
               </button>
             </section>

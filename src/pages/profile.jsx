@@ -2,531 +2,262 @@ import React from "react";
 import Rider1removebg from "../assets/images/rider1removebg.png";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+// import Rider1removebg from "../assets/images/rider1removebg.png";
 
 export default function profile() {
   return (
     <>
-    <Navbar/>
-      <div>
-        <section>
-          <h1 className="text-6xl text-center text-primary font-bold pt-10">
-            Profile
-          </h1>
-          <div class="container mx-auto  px-4 sm:px-6 lg:px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-              <div class="max-w-lg">
-                <p class=" text-green-800 text-lg w-12/12">
-                  {" "}
-                  About Me: Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Sed quis eros at lacus feugiat hendrerit sed ut tortor.
-                </p>
-                <p class="mt-4 text-green-800 text-lg w-12/12">
-                  {" "}
-                  About Me: Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Sed quis eros at lacus feugiat hendrerit sed ut tortor.
-                </p>
-                <p class="mt-4 text-green-800 text-lg w-12/12">
-                  {" "}
-                  About Me: Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Sed quis eros at lacus feugiat hendrerit sed ut tortor.
-                </p>
-              </div>
-              <div class="mt-12 md:mt-0">
-                <img src={Rider1removebg} />
-              </div>
+      <Navbar bgColor={"bg-gray-400 text-white"} />
+      <div className="bg-gray-100 p-4">
+        <div className="border-1 shadow-lg shadow-gray-700 rounded-lg">
+          {/* <!-- top content --> */}
+          <div className="flex rounded-t-lg bg-top-color sm:px-2 w-full">
+            <div className="mt-10 h-40 w-40 overflow-hidden sm:rounded-full sm:relative sm:p-0 top-10 left-5 p-3">
+              <img src={Rider1removebg} />
+            </div>
+
+            <div className="w-2/3 sm:text-center pl-5 mt-16 text-start ">
+              <p className="font-poppins font-bold text-heading sm:text-4xl text-primary text-2xl">
+                Rexford Addae
+              </p>
+              <p className="text-primary text-heading">Diashi-Nam Rider</p>
             </div>
           </div>
-          <hr></hr>
-        </section>
 
-        <div className="flex flex-row">
-          <div class="flex items-start px-14">
-            <div class="flex-shrink-0">
-              <div class="inline-block relative">
-                <div class="relative w-16 h-16 rounded-full overflow-hidden">
-                  <img
-                    class="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover"
-                    src="https://picsum.photos/id/646/200/200"
-                    alt="Profile picture"
-                  />
-                  <div class="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
-                </div>
-                <svg
-                  class="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-6">
-              <p class="flex items-baseline">
-                <span class="text-gray-600 font-bold">Victoria</span>
-                <span class="ml-2 text-green-600 text-xs">Verified Rider</span>
-              </p>
-              <div class="flex items-center mt-1">
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-gray-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-              </div>
-              <div class="flex items-center mt-4 text-gray-600">
-                <div class="flex items-center">
-                  <span class="text-sm">Service Quality</span>
-                  <div class="flex items-center ml-2">
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="flex items-center ml-4">
-                  <span class="text-sm">Purchasing Experience</span>
-                  <div class="flex items-center ml-2">
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-3">
-                <span class="font-bold text-green-800">
-                  Sapien consequat eleifend!
-                </span>
-                <p class="mt-1">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-              <div class="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current"></div>
-            </div>
+          {/* <!-- main content --> */}
+          <div className="p-5">
+            <div className="flex flex-col sm:flex-row sm:mt-10">
+              <div className="flex flex-col sm:w-1/3">
+                {/* <!-- My contact --> */}
+                <div className="py-3 sm:order-none order-3">
+                  <h2 className="text-lg text-primary font-poppins font-bold text-top-color">
+                    My Contact
+                  </h2>
+                  <div className="border-2 w-20 border-top-color my-3"></div>
 
-            <div class="flex items-start px-14">
-              <div class="flex-shrink-0">
-                <div class="inline-block relative">
-                  <div class="relative w-16 h-16 rounded-full overflow-hidden">
-                    <img
-                      class="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover"
-                      src="https://picsum.photos/id/646/200/200"
-                      alt="Profile picture"
-                    />
-                    <div class="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
-                  </div>
-                  <svg
-                    class="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="ml-6">
-                <p class="flex items-baseline">
-                  <span class="text-gray-600 font-bold">Gabby</span>
-                  <span class="ml-2 text-green-600 text-xs">
-                    Verified Rider
-                  </span>
-                </p>
-                <div class="flex items-center mt-1">
-                  <svg
-                    class="w-4 h-4 fill-current text-yellow-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                  <svg
-                    class="w-4 h-4 fill-current text-yellow-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                  <svg
-                    class="w-4 h-4 fill-current text-yellow-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                  <svg
-                    class="w-4 h-4 fill-current text-yellow-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                  <svg
-                    class="w-4 h-4 fill-current text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                </div>
-                <div class="flex items-center mt-4 text-gray-600">
-                  <div class="flex items-center">
-                    <span class="text-sm">Service Quality</span>
-                    <div class="flex items-center ml-2">
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-gray-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
+                  <div>
+                    <div className="flex items-center my-1">
+                      <a className="w-6 text-gray-700 hover:text-orange-600">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                          className="h-4"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <div className="ml-2 truncate">rexdiash@gmail.com</div>
                     </div>
-                  </div>
-                  <div class="flex items-center ml-4">
-                    <span class="text-sm">Purchasing Experience</span>
-                    <div class="flex items-center ml-2">
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
+                    <div className="flex items-center my-1">
+                      <a
+                        className="w-6 text-gray-700 hover:text-orange-600"
+                        aria-label="Visit TrendyMinds YouTube"
+                        href=""
+                        target="_blank"
                       >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          className="h-4"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <div>9145258775</div>
+                    </div>
+                    <div className="flex items-center my-1">
+                      <a
+                        className="w-6 text-gray-700 hover:text-orange-600"
+                        aria-label="Visit TrendyMinds Facebook"
+                        href=""
+                        target="_blank"
                       >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-yellow-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                          className="h-4"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <div>Rexford Addy</div>
+                    </div>
+                    <div className="flex items-center my-1">
+                      <a
+                        className="w-6 text-gray-700 hover:text-orange-600"
+                        aria-label="Visit TrendyMinds Twitter"
+                        href=""
+                        target="_blank"
                       >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-gray-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 fill-current text-gray-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
+                        <svg
+                          className="h-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <div>amitpachange21</div>
                     </div>
                   </div>
                 </div>
-                <div class="mt-3">
-                  <span class="font-bold text-green-800">
-                    Sapien consequat eleifend!
-                  </span>
-                  <p class="mt-1">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+
+                {/* <!-- Education Background --> */}
+                <div className="py-3 sm:order-none order-1">
+                  <h2 className="text-lg text-primary font-poppins font-bold text-top-color">
+                    Education Background
+                  </h2>
+                  <div className="border-2 w-20 border-top-color my-3"></div>
+
+                  <div className="flex flex-col space-y-1">
+                    <div className="flex flex-col">
+                      <p className="font-semibold text-xs text-gray-700">
+                        2021
+                      </p>
+                      <p className="text-sm font-medium">
+                        <span className="text-green-700">
+                          B.E. (INFORMATION TECHNOLOGY)
+                        </span>
+                        , PIMPRI CHINCHWAD COLLEGE OF ENGINEERING, PUNE.
+                      </p>
+                      <p className="font-bold text-xs text-gray-700 mb-2">
+                        Percentage: 76.61
+                      </p>
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="font-semibold text-xs text-gray-700">
+                        2017
+                      </p>
+                      <p className="text-sm font-medium">
+                        <span className="text-green-700">HSC</span>, RAJARSHI
+                        SHAHU COLLEGE, LATUR.
+                      </p>
+                      <p className="font-bold text-xs text-gray-700 mb-2">
+                        Percentage: 80.77
+                      </p>
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="font-semibold text-xs text-gray-700">
+                        2015
+                      </p>
+                      <p className="text-sm font-medium">
+                        <span className="text-green-700">SSC</span>, DNYANESHWAR
+                        HIGH SCHOOL, LATUR.
+                      </p>
+                      <p className="font-bold text-xs text-gray-700 mb-2">
+                        Percentage: 93.80
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:w-2/3 order-first sm:order-none sm:-mt-10">
+                {/* <!-- About me --> */}
+                <div className="py-3">
+                  <h2 className="text-lg text-primary font-poppins font-bold text-top-color">
+                    About Me
+                  </h2>
+                  <div className="border-2 w-20 border-top-color my-3"></div>
+                  <p>
+                    Rex is passionate about optimizing logistics operations to
+                    improve efficiency and customer satisfaction. He thrives in
+                    fast-paced environments and enjoys the challenge of meeting
+                    tight deadlines while maintaining quality standards.
                   </p>
                 </div>
-                <div class="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current"></div>
-              </div>
-            </div>
-          </div>
 
-          <div class="flex items-start px-14">
-            <div class="flex-shrink-0">
-              <div class="inline-block relative">
-                <div class="relative w-16 h-16 rounded-full overflow-hidden">
-                  <img
-                    class="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover"
-                    src="https://picsum.photos/id/646/200/200"
-                    alt="Profile picture"
-                  />
-                  <div class="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
-                </div>
-                <svg
-                  class="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-6">
-              <p class="flex items-baseline">
-                <span class="text-gray-600 font-bold">Elsie</span>
-                <span class="ml-2 text-green-600 text-xs">Verified Rider</span>
-              </p>
-              <div class="flex items-center mt-1">
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-yellow-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-                <svg
-                  class="w-4 h-4 fill-current text-gray-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-              </div>
-              <div class="flex items-center mt-4 text-gray-600">
-                <div class="flex items-center">
-                  <span class="text-sm">Service Quality</span>
-                  <div class="flex items-center ml-2">
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
+                {/* <!-- Professional Experience --> */}
+                <div className="py-3">
+                  <h2 className="text-lg text-primary font-poppins font-bold text-top-color">
+                    Professional Experience
+                  </h2>
+                  <div className="border-2 w-20 border-top-color my-3"></div>
+
+                  <div className="flex flex-col">
+                    <div className="flex flex-col">
+                      <p className="text-lg font-bold text-primary">
+                        Diashi-Nam | Dispatch Rider
+                      </p>
+                      <p className="font-semibold text-sm text-gray-700">
+                        2021 - Present
+                      </p>
+                      <p className="font-semibold text-sm text-gray-700 mt-2 mb-1">
+                        Key Responsibilities
+                      </p>
+                      <ul className="text-sm list-disc pl-4 space-y-1">
+                        <li>Working on customer facing product</li>
+                        <li>Deliverying highly efficient products</li>
+                      </ul>
+                    </div>
+
+                    <div className="flex flex-col mt-8">
+                      <p className="text-lg font-bold text-primary">
+                        Bolt Food | Driver
+                      </p>
+                      <p className="font-semibold text-sm text-gray-700">
+                        2020-2021
+                      </p>
+                      <p className="font-semibold text-sm text-gray-700 mt-2 mb-1">
+                        Key Responsibilities
+                      </p>
+                      <ul className="text-sm list-disc pl-4 space-y-1">
+                        <li>Dropping off salespersons</li>
+                        <li>Supplying purchase products</li>
+                        <li>Loading and offloading goods</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center ml-4">
-                  <span class="text-sm">Purchasing Experience</span>
-                  <div class="flex items-center ml-2">
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-yellow-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                    <svg
-                      class="w-3 h-3 fill-current text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
+
+                {/* <!-- Projects --> */}
+                <div className="py-3">
+                  <h2 className="text-lg text-primary font-poppins font-bold text-top-color">
+                    Projects
+                  </h2>
+                  <div className="border-2 w-20 border-top-color my-3"></div>
+
+                  <div className="flex flex-col">
+                    <div className="flex flex-col">
+                      <p className="text-lg font-semibold text-gray-700">
+                        Used Books mobile app
+                      </p>
+                      <p className="font-normal text-sm text-gray-700 mb-1 pl-2">
+                        A platform to sell as well as to buy used books only for
+                        PCCoE College due to this reuse of books will be there
+                        beneficial for environment also indirectly helps
+                        increase communication between juniors and seniors.
+                      </p>
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="text-lg font-semibold text-gray-700">
+                        Parking Automation System
+                      </p>
+                      <p className="font-normal text-sm text-gray-700 mb-1 pl-2">
+                        it’s a web application which helps you to book your slot
+                        for your car just like booking a movie ticket from home.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="mt-3">
-                <span class="font-bold text-green-800">
-                  Sapien consequat eleifend!
-                </span>
-                <p class="mt-1">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-              <div class="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current"></div>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

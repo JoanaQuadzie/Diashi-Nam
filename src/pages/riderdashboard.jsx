@@ -6,7 +6,7 @@ import Navbar from "../components/navbar";
 export default function riderdashboard() {
   return (
     <>
-    <Navbar/>
+      <Navbar bgColor={"bg-gray-400"} />
       <div>
         <div class="flex h-screen bg-gray-100">
           {/* <!-- sidebar --> */}
@@ -134,7 +134,7 @@ export default function riderdashboard() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
