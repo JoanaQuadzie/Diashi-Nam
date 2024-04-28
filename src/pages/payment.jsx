@@ -146,7 +146,7 @@ export default function Payment() {
                   </div>
                 </div>
                 <div class="mt-8">
-                  <Link to="/confirmation">
+                  <Link to="/confirmorder">
                     <button
                       type="submit"
                       class="w-full bg-primary hover:bg-purple-900 text-white font-medium py-3 rounded-lg focus:outline-none"

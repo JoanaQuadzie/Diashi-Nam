@@ -5,6 +5,10 @@ import Groceries from "../assets/images/groceries.png";
 import Vegetables from "../assets/images/vegetables.png";
 import Fruits from "../assets/images/fruits.png";
 import Navbar from "../components/navbar";
+import Cosmetics from "../assets/images/cosmetics.png";
+import Utensils from "../assets/images/utensils.png";
+import Stationary from "../assets/images/stationary.jpg";
+import Others from "../assets/images/others.jpg";
 // import Footer from "../components/footer";
 
 export default function Categories() {
@@ -21,12 +25,28 @@ export default function Categories() {
       img: Vegetables,
     },
     {
-      title: "Fruits",
-      img: Fruits,
+      title: "Cosmetics",
+      img: Cosmetics,
     },
     {
       title: "Clothes",
       img: Clothes,
+    },
+    {
+      title: "Fruits",
+      img: Fruits,
+    },
+    {
+      title: "Utensils",
+      img: Utensils,
+    },
+    {
+      title: "Stationary",
+      img: Stationary,
+    },
+    {
+      title: "Others",
+      img: Others,
     },
   ];
 

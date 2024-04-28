@@ -8,14 +8,14 @@ import Sign3 from "../assets/images/sign3.jpg";
 export default function SignUp() {
   return (
     <>
-      <Navbar bgColor={"bg-gray-400"} />
+      {/* <Navbar bgColor={"bg-gray-400"} /> */}
       <div className="grid grid-cols-2">
         <div className="flex justify-center items-center">
           <img className="w-9/12" src={Sign3} alt="signup image" />
         </div>
         <div className="min-h-screen flex flex-col py-6 sm:pl-0 sm:pr-6 lg:pr-8 lg:pl-1 mr-12 mt-20">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <h2 className="mt-6 text-center text-4xl leading-9 font-extrabold text-primary">
+            <h2 className=" text-center text-4xl leading-9 font-extrabold text-primary">
               Create a new account
             </h2>
             <p className="mt-2 text-center text-sm leading-5 text-primary max-w">
@@ -153,7 +153,7 @@ export default function SignUp() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

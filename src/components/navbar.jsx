@@ -20,7 +20,7 @@ export default function Navbar({ bgColor }) {
                   className="block px-3 text-white  rounded md:bg-transparent md:text-white text-xl md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                 >
-                  Home
+                  <Link to="/#">Home</Link>
                 </a>
               </li>
               <li>
