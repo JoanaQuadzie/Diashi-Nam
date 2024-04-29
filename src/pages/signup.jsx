@@ -42,11 +42,10 @@ export default function SignUp() {
                   <div className="mt-1 relative rounded-md shadow-sm">
                     <input
                       id="name"
-                      name="name"
+                      name=""
                       placeholder="John Doe"
-                      type="text"
+                      type=""
                       required=""
-                      value=""
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                     />
                     <div className="hidden absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -75,11 +74,10 @@ export default function SignUp() {
                   <div className="mt-1 relative rounded-md shadow-sm">
                     <input
                       id="password"
-                      name="password"
+                      name=""
                       placeholder="*************"
                       type="password"
                       required=""
-                      value=""
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                     />
                     <div className="hidden absolute inset-y-0 right-0 pr-3 items-center pointer-events-none">
@@ -108,9 +106,9 @@ export default function SignUp() {
                   <div className="mt-1 rounded-md shadow-sm">
                     <input
                       id="location"
-                      name="password"
+                      name=""
                       placeholder="Accra"
-                      type="password"
+                      type=""
                       required=""
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                     />
@@ -127,9 +125,9 @@ export default function SignUp() {
                   <div className="mt-1 rounded-md shadow-sm">
                     <input
                       id="contact"
-                      name="contact"
+                      name=""
                       placeholder="123-456-789"
-                      type="password"
+                      type=""
                       required=""
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                     />
