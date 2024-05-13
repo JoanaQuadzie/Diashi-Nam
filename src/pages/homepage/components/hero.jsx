@@ -16,8 +16,7 @@ export default function Hero() {
           <div className="space-y-9 pt-24">
             <h1 className="text-7xl font-bold text-primary">Diashi-Nam</h1>
             <h2 className="text-xl font-medium text-black w-2/4">
-              I'm here to get you everything you need right at your doorstep in
-              a minute
+              Here to get you everything you need in a minute right at your doorstep
             </h2>
             <FadeIn
               from="bottom"
