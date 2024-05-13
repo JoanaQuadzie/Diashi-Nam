@@ -1,8 +1,5 @@
 import React from "react";
-import Logoremove from "../assets/images/logoremove.png";
 import { Link } from "react-router-dom";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
 import Sign3 from "../assets/images/sign3.jpg";
 
 export default function SignUp() {
