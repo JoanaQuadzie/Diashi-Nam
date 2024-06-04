@@ -5,10 +5,8 @@ import Navbar from "../components/navbar";
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';
 
-
-
 export default function Payment() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <>
@@ -18,8 +16,7 @@ export default function Payment() {
           Select Your Preferred Payment Method
         </h1>
 
-        <div className="grid grid-cols-2  px-40">
-          {/* <div class=" flex justify-center items-center w-full h-screen p-5"> */}
+        <div className="sm:grid grid-cols-2 px-4">
           <div class="bg-white px-10 pt-2 pb-8 mb-4 w-fit shadow-lg">
             <h1 class="text-3xl font-bold mb-4 text-center text-black">
               Mobile Money
@@ -164,7 +161,6 @@ export default function Payment() {
     </>
   );
 }
-
 
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';

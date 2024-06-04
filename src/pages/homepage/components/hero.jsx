@@ -5,18 +5,46 @@ import { FadeIn } from "react-slide-fade-in";
 
 export default function Hero() {
   return (
-    <div className="bg-gray-100 top-16 absolute w-full py-16 md:w-2/3 lg:w-full">
-      <div className="w-full flex justify-between px-36">
+    <div className="bg-gray-100 md:top-16 w-full py-16 md:w-2/3 lg:w-full">
+      <div className="w-full flex justify-between md:px-36 p-6">
         <FadeIn
           from="left"
           positionOffset={400}
           triggerOffset={200}
           delayInMilliseconds={400}
         >
-          <div className="space-y-9 pt-24">
-            <h1 className="text-7xl font-bold text-primary">Diashi-Nam</h1>
-            <h2 className="text-xl font-medium text-black w-2/4">
-              Here to get you everything you need in a minute right at your doorstep
+          <div className="space-y-9 pt-24 ">
+            <div className="flex">
+              <h1 className="md:text-7xl text-5xl font-bold text-primary">
+                Diashi-Nam
+              </h1>
+              <FadeIn
+                from="right"
+                positionOffset={400}
+                triggerOffset={200}
+                delayInMilliseconds={600}
+              >
+                <img
+                  className="h-full w-[950px] "
+                  src={Front4}
+                  alt="delivery guy image"
+                />
+              </FadeIn>
+            </div>
+            <h2 className="text-xl text-black w-2/4">
+              Need to purchase an item?Look no further! With{" "}
+              <span className="uppercase text-green-600 font-bold">
+                Diashi-Nam
+              </span>
+              , you just have to place an order, and in a few minutes, our{" "}
+              <span className="text-orange-600 font-bold">dedicated</span>{" "}
+              riders will contact you and ensure your package is delivered
+              without any stress or hassle. Experience the{" "}
+              <span className="text-orange-600 font-bold">authenticity</span> of
+              goods brought straight to your door.{" "}
+              <span className="text-green-600 font-bold">Fast, reliable</span>,
+              and <span className="text-orange-600 font-bold">hassle-free</span>{" "}
+              – that’s our promise to you!
             </h2>
             <FadeIn
               from="bottom"
@@ -39,16 +67,6 @@ export default function Hero() {
             </FadeIn>
           </div>
         </FadeIn>
-        <div>
-          <FadeIn
-            from="right"
-            positionOffset={400}
-            triggerOffset={200}
-            delayInMilliseconds={600}
-          >
-            <img className="h-full w-[450px]" src={Front4} alt="" />
-          </FadeIn>
-        </div>
       </div>
     </div>
   );

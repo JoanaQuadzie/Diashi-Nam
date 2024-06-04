@@ -3,8 +3,6 @@ import Aboutimg2 from "../assets/images/aboutimg2.png";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
-
-
 export default function about() {
   return (
     <>
@@ -14,7 +12,7 @@ export default function about() {
           About Us
         </h1>
         <div className="flex items-center gap-x-5">
-          <div className="flex flex-col-3 w-1/2">
+          <div className="">
             <p className="text-xl ">
               Welcome to Diashi-Nam, where authenticity, speed, and quality
               converge for an exceptional shopping experience.

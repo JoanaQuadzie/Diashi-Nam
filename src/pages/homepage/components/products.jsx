@@ -10,7 +10,7 @@ import Hero7 from "../../../assets/images/hero7.png";
 import { useNavigate } from "react-router-dom";
 
 const Products = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const categories = [
     {
       title: "Groceries",
@@ -45,7 +45,7 @@ const Products = () => {
   ];
 
   return (
-    <div className="mt-[750px]">
+    <div className="mt-3">
       <h2 className="font-bold text-center text-5xl text-primary my-12">
         Product Categories
       </h2>
@@ -74,8 +74,8 @@ const Products = () => {
             Why Shop With Us
           </h2>
           <div className="grid grid-cols-2 px-40 items-center">
-            <div className="flex flex-col">
-              <div className="w-full ">
+            <div className="flex flex-col ">
+              <div className="w-full sm:w-full">
                 <div className="flex bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start p-5">
                   <div className="relative w-32 h-38 flex-shrink-0 pb-2">
                     <img src={Freshfood} alt="" />
