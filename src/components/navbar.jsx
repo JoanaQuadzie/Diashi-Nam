@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar({ bgColor }) {
   return (
     <div>
-      <nav className="bg-primary text-white fixed top-0 w-full py-2 dark:bg-gray-900">
+      <nav className="bg-primary text-white fixed top-0 w-full py-2 dark:bg-gray-900 z-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"

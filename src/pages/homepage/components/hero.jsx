@@ -5,7 +5,7 @@ import { FadeIn } from "react-slide-fade-in";
 
 export default function Hero() {
   return (
-    <div className="bg-gray-100 md:top-16 w-full py-16 md:w-2/3 lg:w-full">
+    <div className="bg-gray-100 md:top-16 w-full py-16 md:w-2/3 lg:w-full flex justify-center">
       <div className="w-full flex justify-between md:px-36 p-6">
         <FadeIn
           from="left"
@@ -14,7 +14,7 @@ export default function Hero() {
           delayInMilliseconds={400}
         >
           <div className="space-y-9 pt-24 ">
-            <div className="flex">
+            <div className="">
               <h1 className="md:text-7xl text-5xl font-bold text-primary">
                 Diashi-Nam
               </h1>
@@ -24,14 +24,16 @@ export default function Hero() {
                 triggerOffset={200}
                 delayInMilliseconds={600}
               >
-                <img
-                  className="h-full w-[950px] "
-                  src={Front4}
-                  alt="delivery guy image"
-                />
+                <div className="flex">
+                  <img
+                    className=" my-8 md:w-[250px]  "
+                    src={Front4}
+                    alt="delivery guy image"
+                  />
+                </div>
               </FadeIn>
             </div>
-            <h2 className="text-xl text-black w-2/4">
+            <h2 className="text-xl text-black md:w-2/4 ">
               Need to purchase an item?Look no further! With{" "}
               <span className="uppercase text-green-600 font-bold">
                 Diashi-Nam
@@ -52,7 +54,7 @@ export default function Hero() {
               triggerOffset={200}
               delayInMilliseconds={800}
             >
-              <div className="space-x-7">
+              <div className="flex space-x-8 md:space-x-7 ">
                 <Link to="/signup">
                   <button className="bg-primary text-white py-2 px-5 rounded-full">
                     Register

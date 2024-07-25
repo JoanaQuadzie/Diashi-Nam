@@ -70,25 +70,23 @@ const Products = () => {
         </div>
 
         <div className="bg-gray-100">
-          <h2 className="font-bold text-center text-5xl text-primary pt-8 my-20">
+          <h2 className="font-bold text-center text-4xl md:text-5xl text-primary pt-8 my-20">
             Why Shop With Us
           </h2>
-          <div className="grid grid-cols-2 px-40 items-center">
-            <div className="flex flex-col ">
-              <div className="w-full sm:w-full">
-                <div className="flex bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start p-5">
-                  <div className="relative w-32 h-38 flex-shrink-0 pb-2">
-                    <img src={Freshfood} alt="" />
-                  </div>
+          <div className="grid md:grid-cols-2 px-40 items-center">
+            <div className="flex md:flex-col ">
+              <div className="grid bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start p-5">
+                <div className="relative w-32 h-38 flex-shrink-0">
+                  <img src={Freshfood} alt="" />
+                </div>
 
-                  <div className="flex flex-col gap-2 py-3">
-                    <p className="text-xl font-bold text-primary">Fresh Food</p>
+                <div className="flex flex-col gap-2 py-3">
+                  <p className="text-xl font-bold text-primary">Fresh Food</p>
 
-                    <p className="text-gray-500">
-                      We try to keep our items safe and fresh. Our aim is to
-                      make available everything to as many people as possible.
-                    </p>
-                  </div>
+                  <p className="text-gray-500">
+                    We try to keep our items safe and fresh. Our aim is to make
+                    available everything to as many people as possible.
+                  </p>
                 </div>
               </div>
 
