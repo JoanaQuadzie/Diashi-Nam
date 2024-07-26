@@ -8,13 +8,13 @@ export default function Login() {
   return (
     <>
       <Navbar bgColor={"bg-gray-400"} />
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols md:grid-cols-2">
         <div className="flex justify-center items-center">
           <img className="w-9/12 mt-12" src={Signup3} alt="" />
         </div>
         <div className="min-h-screen flex flex-col py-6 sm:pl-0 sm:pr-6 lg:pr-8 lg:pl-1 mr-40 mt-32">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <h2 className="mt-4 text-center text-3xl leading-9 font-extrabold text-primary">
+            <h2 className="md:mt-4 text-center text-3xl leading-9 font-extrabold text-primary">
               Welcome Back
             </h2>
             <p className="mt-2 text-center text-sm leading-5 text-primary max-w">

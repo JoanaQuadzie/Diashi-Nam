@@ -6,7 +6,7 @@ export default function SignUp() {
   return (
     <>
       {/* <Navbar bgColor={"bg-gray-400"} /> */}
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-4">
         <div className="flex justify-center items-center">
           <img className="w-9/12" src={Sign3} alt="signup image" />
         </div>

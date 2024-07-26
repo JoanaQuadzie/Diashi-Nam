@@ -74,7 +74,7 @@ const Products = () => {
             Why Shop With Us
           </h2>
           <div className="grid md:grid-cols-2 px-40 items-center">
-            <div className="flex md:flex-col ">
+            <div className="flex flex-col md:flex-col">
               <div className="grid bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start p-5">
                 <div className="relative w-32 h-38 flex-shrink-0">
                   <img src={Freshfood} alt="" />

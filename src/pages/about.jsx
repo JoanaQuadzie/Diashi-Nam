@@ -7,11 +7,11 @@ export default function about() {
   return (
     <>
       <Navbar bgColor={"bg-gray-400"} />
-      <div className="flex flex-col px-16">
-        <h1 className="text-primary text-5xl font-bold text-center py-10 mt-14">
+      <div className="flex flex-col md:px-16 px-4">
+        <h1 className="text-primary text-5xl font-bold text-center py-10 mt-16">
           About Us
         </h1>
-        <div className="flex items-center gap-x-5">
+        <div className="flex items-center gap-x-5 flex-col md:flex-row">
           <div className="">
             <p className="text-xl ">
               Welcome to Diashi-Nam, where authenticity, speed, and quality
