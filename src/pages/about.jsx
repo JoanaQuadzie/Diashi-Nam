@@ -7,7 +7,7 @@ export default function about() {
   return (
     <>
       <Navbar bgColor={"bg-gray-400"} />
-      <div className="flex flex-col md:px-16 px-4">
+      <div className="flex flex-col md:px-16 px-4 ">
         <h1 className="text-primary text-5xl font-bold text-center py-10 mt-16">
           About Us
         </h1>
