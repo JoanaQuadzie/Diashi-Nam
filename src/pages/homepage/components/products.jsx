@@ -73,8 +73,8 @@ const Products = () => {
           <h2 className="font-bold text-center text-4xl md:text-5xl text-primary pt-8 my-20">
             Why Shop With Us
           </h2>
-          <div className="grid md:grid-cols-2 px-40 items-center">
-            <div className="flex flex-col md:flex-col">
+          <div className="grid md:grid-cols-2 px-40 items-center justify-center">
+            <div className="flex flex-col md:flex-col ">
               <div className="grid bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start p-5">
                 <div className="relative w-32 h-38 flex-shrink-0">
                   <img src={Freshfood} alt="" />
@@ -101,7 +101,7 @@ const Products = () => {
                       Quickest Delivery
                     </p>
 
-                    <p className="text-gray-500">
+                    <p className="text-gray-500 w-48">
                       We love to make our consumers feel like shopping next to
                       their doors by ensuring the quickest delivery service.
                     </p>
@@ -133,7 +133,9 @@ const Products = () => {
                 </div>
               </div>
             </div>
-            <img className="ml-20 mb-20 w-full" src={Hero7} alt="" />
+            <div className="flex justify-center">
+              <img className="ml-20 mb-20 w-full" src={Hero7} alt="" />
+            </div>
           </div>
         </div>
       </div>
